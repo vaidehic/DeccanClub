@@ -10,12 +10,7 @@ pipeline {
 	
 	
 
-    agent
-	{
-	node{
-		label 'linux-slave'
-	}
-	}
+    agent any
 	
        tools{
         maven "maven-linux-slave"
