@@ -12,11 +12,7 @@ pipeline {
 
     agent any
 	
-       tools{
-        maven "maven-linux-slave"
-        jdk "linux-jdk"
-    }  
-	
+       
 	
 	
     stages{
