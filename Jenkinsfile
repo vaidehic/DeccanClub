@@ -12,7 +12,7 @@ pipeline {
              stage('Compile'){
             steps{
                 echo "COMPILE"
-	     sh 'export PATH=/opt/apache-maven-3.1.0/bin:$PATH'
+	    
              sh 'mvn  clean install'
             }
         }
