@@ -18,7 +18,7 @@
 	<properties>
 		
 		<java.version>1.8</java.version>
-		<maven.compiler.target>3.1.0</maven.compiler.target?
+		<maven.compiler.target>3.1.0</maven.compiler.target>
 		
 	
   <sonar.host.url>http://172.27.59.109:9000</sonar.host.url>
