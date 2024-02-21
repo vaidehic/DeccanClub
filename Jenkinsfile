@@ -12,7 +12,7 @@ pipeline {
              stage('Compile'){
             steps{
                 echo "COMPILE"
-             sh 'mvn clean install'
+             sh 'mvn --version 3.1.0 clean install'
             }
         }
 	             
