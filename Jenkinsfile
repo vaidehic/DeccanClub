@@ -1,20 +1,13 @@
 pipeline {
 	
-
-	
 	environment {
         DATE = new Date().format('yy.M')
         TAG = "${DATE}.${BUILD_NUMBER}"
 	//TAG = "${BUILD_NUMBER}"
     }
 	
-	
-
     agent any
-	
-       
-	
-	
+
     stages{
              stage('Compile'){
             steps{
@@ -22,12 +15,7 @@ pipeline {
              sh 'mvn clean install'
             }
         }
-    
-	    
-	    
-	    
-	    
-         
+	             
          stage('Unit Test Case') {
              steps {
                  sh 'mvn test'
