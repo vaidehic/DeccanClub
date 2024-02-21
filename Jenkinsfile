@@ -12,7 +12,8 @@ pipeline {
              stage('Compile'){
             steps{
                 echo "COMPILE"
-	    // sh '/opt/apache-maven-3.1.0/bin/mvn clean install'
+	    sh '/opt/apache-maven-3.6.3/bin/mvn clean install'
+		     
              sh 'mvn  clean install'
             }
         }
